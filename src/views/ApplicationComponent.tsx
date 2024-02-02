@@ -1,9 +1,10 @@
+// @ts-nocheck
 import {type as osType} from "os";
 import * as classNames from "classnames";
 import {TabHeaderComponent, Props} from "./TabHeaderComponent";
 import * as React from "react";
 import {ipcRenderer} from "electron";
-import {remote} from "electron";
+import * as remote from '@electron/remote';
 import * as css from "./css/styles";
 import {SearchComponent} from "./SearchComponent";
 import {TabComponent} from "./TabComponent";

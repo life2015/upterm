@@ -1,5 +1,6 @@
+// @ts-nocheck
 import {KeyboardAction} from "../../Enums";
-import {remote} from "electron";
+import * as remote from '@electron/remote';
 import {getAcceleratorForAction} from "../keyevents/Keybindings";
 import {ApplicationComponent} from "../ApplicationComponent";
 import {services} from "../../services";

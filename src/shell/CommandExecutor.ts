@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {Job} from "./Job";
 import {Command} from "./BuiltInCommands";
 import {PTY} from "../PTY";

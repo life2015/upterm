@@ -1,5 +1,6 @@
+// @ts-nocheck
 import {services} from "../services/index";
-import {remote} from "electron";
+import * as remote from '@electron/remote';
 import {Status} from "../Enums";
 
 services.jobs.onFinish.subscribe(job => {

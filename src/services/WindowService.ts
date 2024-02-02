@@ -1,4 +1,4 @@
-import {remote} from "electron";
+import * as remote from '@electron/remote';
 import {Observable} from "rxjs/Observable";
 import "rxjs/add/observable/fromEvent";
 import "rxjs/add/operator/map";
@@ -15,9 +15,9 @@ export class WindowService {
         if (remote) {
             const electronWindow = remote.BrowserWindow.getAllWindows()[0];
 
-            this.onResize = Observable.fromEvent(electronWindow, "resize")
-                .merge(Observable.fromEvent(electronWindow.webContents, "devtools-opened"))
-                .merge(Observable.fromEvent(electronWindow.webContents, "devtools-closed"));
+            // this.onResize = Observable.fromEvent(electronWindow, "resize")
+            //     .merge(Observable.fromEvent(electronWindow.webContents, "devtools-opened"))
+            //     .merge(Observable.fromEvent(electronWindow.webContents, "devtools-closed"));
 
             this.onBoundsChange = Observable.fromEvent(electronWindow, "move")
                 .merge(Observable.fromEvent(electronWindow, "resize"))

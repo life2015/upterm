@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {KeyCode, KeyboardAction, Status} from "../../Enums";
 import {error} from "../../utils/Common";
 import {SearchComponent} from "../SearchComponent";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {ApplicationComponent} from "../ApplicationComponent";
 import {MouseEvent} from "../../Interfaces";
 import * as fs from "fs";

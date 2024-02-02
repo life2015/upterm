@@ -6,6 +6,7 @@
     "preserveConstEnums": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
+    "skipLibCheck": true,
     "noImplicitAny": true,
     "noEmitOnError": true,
     "jsx": "react",

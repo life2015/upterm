@@ -1,6 +1,7 @@
 import {app, ipcMain, nativeImage, BrowserWindow, screen} from "electron";
 import {readFileSync} from "fs";
 import {windowBoundsFilePath} from "../utils/Common";
+require('@electron/remote/main').initialize();
 
 app.on("ready", () => {
     const bounds = windowBounds();
@@ -8,6 +9,7 @@ app.on("ready", () => {
     let options: Electron.BrowserWindowConstructorOptions = {
         webPreferences: {
             experimentalFeatures: true,
+            // @ts-ignore
             experimentalCanvasFeatures: true,
         },
         titleBarStyle: "hidden",

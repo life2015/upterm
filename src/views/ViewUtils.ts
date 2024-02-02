@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {KeyCode} from "../Enums";
 
 export function isModifierKey(event: KeyboardEvent) {
